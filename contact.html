@@ -38,7 +38,7 @@
         <div class="form-block w-form">
           <form id="wf-form-Contact-Form" name="wf-form-Contact-Form" data-name="Contact Form" class="contact-form">
             <div class="short-info"><label for="Name-3" class="field-label">Name</label><input type="text" class="text-field w-input" autofocus="true" maxlength="256" name="Name-3" data-name="Name 3" placeholder="Enter your name here" id="Name-3" required=""><label for="Organization-3" class="field-label">Affiliation</label><input type="text" class="text-field w-input" autofocus="true" maxlength="256" name="Organization-3" data-name="Organization 3" placeholder="Enter the name of your affiliation" id="Organization-3" required=""><label for="email-4" class="field-label">Purpose</label><select id="field-2" name="field-2" required="" data-name="Field 2" class="select-field w-select"><option value="">Select your purpose of contact</option><option value="Purchase">Purchase</option><option value="Commision">Commision</option><option value="Exhibition">Exhibition</option><option value="Collaboration">Collaboration</option><option value="Design">Design</option><option value="Consultancy">Consultancy</option><option value="Other">Other</option></select><label for="Email-4" class="field-label">Email Address</label><input type="email" class="text-field w-input" autofocus="true" maxlength="256" name="Email-4" data-name="Email 4" placeholder="Enter your email address" id="Email-4" required=""></div>
-            <div class="long-info w-clearfix"><label for="Message-2" class="field-label">Message</label><textarea placeholder="Eneter your message" maxlength="5000" id="Message-2" name="Message-2" data-name="Message 2" required="" autofocus="true" class="text-field-message w-input"></textarea><input type="submit" value="Submit" data-wait="Please wait..." class="submit-button w-button"></div>
+            <input type="submit" value="Submit" data-wait="Please wait..." class="submit-button w-button"></div>
           </form>
           <div class="success-message w-form-done">
             <div><span class="text-span">Success <br>‍<br></span>Thank you for reaching out.<br>You will hear back from us soon.</div><img src="images/18199401_1504440466295803_7556593448846202349_n.png" width="163" srcset="images/18199401_1504440466295803_7556593448846202349_n-p-500.png 500w, images/18199401_1504440466295803_7556593448846202349_n.png 631w" sizes="100vw" alt="" class="image-2"></div>
@@ -48,6 +48,32 @@
         </div>
       </div>
     </div>
+  </div>
+  <div class="section">
+    <body class = "container">   
+      <div class = "row">
+        <form name="contact" method="POST" data-netlify="true">
+          <p>
+            <label>Your Name: <input type="text" name="name" /></label>   
+          </p>
+          <p>
+            <label>Your Email: <input type="email" name="email" /></label>
+          </p>
+          <p>
+            <label>Your Role: <select name="role[]" multiple>
+              <option value="leader">Leader</option>
+              <option value="follower">Follower</option>
+            </select></label>
+          </p>
+          <p>
+            <label>Message: <textarea name="message"></textarea></label>
+          </p>
+          <p>
+            <button type="submit">Send</button>
+          </p>
+        </form>       
+      </div>
+   </body> 
   </div>
   <div class="section-footer">
     <div class="container-main-footer w-container">
